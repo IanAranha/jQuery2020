@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<title>jQuery Start</title>
+</head>
+<body>
+	<button>CLICK THIS</button>
+	<p id='myParagraph'>This is my paragraph! </p>
+	<button> Click me to change the paragraph! </button>
+	<script type="text/javascript">
+		console.log($);
+		console.log($());
+		$(document).ready(function(){
+			console.log("HELLO WORLD!");
+		});
+		$("button").click(function(){
+			alert("Why did you click?");
+		});
+
+	    $(document).ready(function(){
+        	var myText = $('#myParagraph').text();
+			alert(myText);
+    	});
+
+		$(document).ready(function(){
+      		$('button').click(function(){
+          	$('#myParagraph').text('see how .text() works as a setter!');
+      })
+  })
+	</script>
+
+</body>
+</html>
