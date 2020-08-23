@@ -1,0 +1,122 @@
+#wrapper{
+	max-width: 970px;
+	min-height: 700px;
+	border: 3px solid black;
+	background-color: #F3E7C9 ;
+	margin: auto;
+	position: relative;
+}
+
+.fieldsets{
+	margin: 10px;
+	border: 5px solid black;
+	border-radius: 5px;
+	font-family: helvetical, sans-serif;
+	text-align: center;
+	background-color: #74BEEE;
+	min-height: 150px;
+}
+
+.legend-header{
+	font-family: helvetical, sans-serif;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#button1{
+	width: auto;
+	height: 40px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+button{
+	min-height: 45px;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+
+#button1{
+	background-color: #9EC165;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button2{
+	background-color: #F03737;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button3{
+	background-color: #37F053;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button4{
+	background-color: #F09937;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button5{
+	background-color:#260AF4 ;
+	width: 170px;
+	font-weight: bolder;
+	color: white;
+}
+
+#button6{
+	background-color:#F40ACD;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button7{
+	background-color:#0AB8F4;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button8{
+	background-color:brown;
+	color: white;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button9{
+	background-color:#310af4;
+	color: white;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button10{
+	background-color: black;
+	color: white;
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button11{
+	background-color: yellowgreen;
+	width: 170px;
+	font-weight: bolder;
+}
+
+.p_element{
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 22px;
+	background-color: black;
+	color:white;
+}
+
+#button12{
+	background-color: rgb(244, 99, 9);
+	width: 170px;
+	font-weight: bolder;
+}

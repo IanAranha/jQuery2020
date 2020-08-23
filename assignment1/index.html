@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<title>JQuery Assignment 1</title>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				alert("YOU CLICKED THE BUTTON!");
+			})
+			$("#button2").click(function(){
+				$("#button2").hide();
+			})
+			$("#button3").click(function(){
+				$("#button2").show();
+			})
+			$("#button4").click(function(){
+				$("#toggle_para").toggle();
+			})
+			$("#button5").click(function(){
+				$("#slide_para").slideUp();
+			})
+			$("#button6").click(function(){
+				$("#slide_para").slideDown();
+			})
+			$("#button7").click(function(){
+				$("#toggle_para2").slideToggle();
+			})
+			$("#button8").click(function(){
+				$("#fadeIN_fadeOUT_para").fadeIn();
+			})
+			$("#button9").click(function(){
+				$("#fadeIN_fadeOUT_para").fadeOut();
+			})
+			$("#button10").click(function(){
+				$("#fadeIN_fadeOUT_para2").fadeToggle();
+			})
+			$("#button11").click(function(){
+				$("#para-1").addClass("p_element");
+			})
+			$("#button12").click(function(){
+				$("#para-1").removeClass("p_element");
+			})
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<fieldset class="fieldsets">
+			<legend class="legend-header">CLICK</legend>
+			<p>Activates a function which runs when a button is clicked.</p>
+			<p>Click for an alert!</p>
+			<button id='button1'>Click for an alert!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">HIDE/ SHOW</legend>
+			<p>.hide hides a visible element when clicked.</p>
+			<p>.show shows a hidden element when clicked</p>
+			<button id='button2'>Click to hide this button!</button>
+			<button id='button3'>Click to show previous button!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">TOGGLE</legend>
+			<p>.toggle toggles between .hide() and .show() when clicked</p>
+			<p id="toggle_para">This will disapper and reappear when button is clicked.<p>
+			<button id='button4'>Click to toggle!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">SLIDE UP / SLIDE DOWN</legend>
+			<p>.slideup() and .slidedown() are similar to .hide() and .show()</p>
+			<p id="slide_para">This will disapper and reappear when button is clicked.<p>
+			<button id='button5'>Click to Slide Up!</button>
+			<button id='button6'>Click to Slide Down!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">SLIDE TOGGLE</legend>
+			<p>.slideup() and .slidedown() are similar to .hide() and .show()</p>
+			<p id="toggle_para2">This will disapper and reappear when button is clicked.<p>
+			<button id='button7'>Click to Slide Toggle!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">Fade In / Fade Out</legend>
+			<p>.fade_in() and .fade_down() are similar to .hide() and .show()</p>
+			<p id="fadeIN_fadeOUT_para">This will fade in and fade out when the appropriate button is clicked.<p>
+			<button id='button8'>Click to Fade In!</button>
+			<button id='button9'>Click to Fade Out!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">Toggle Fade</legend>
+			<p>.ToggleFade is similar to .hide() and .show()</p>
+			<p id="fadeIN_fadeOUT_para2">This will fade in and fade out when the appropriate button is clicked.<p>
+			<button id='button10'>Click to Fade!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">Add Class</legend>
+			<h2>This is a header</h2>
+			<p id="para-1">This is a p-element with no class added and will change when button is clicked.</p>
+			<p class="p_element">This is what paragraph above will look like when button is clicked.</p>
+			<button id='button11'>Click to Add Class to first p-element!</button>
+			<button id='button12'>Click to Remove Class from first p-element!</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">Add Class</legend>
+			<h2>This is a header</h2>
+			<p id="para-1">This is a p-element with no class added and will change when button is clicked.</p>
+			<p class="p_element">This is what paragraph above will look like when button is clicked.</p>
+			<button id='button11'>Click to Add Class to first p-element!</button>
+			<button id='button12'>Click to Remove Class from first p-element!</button>
+		</fieldset>	
+	</div>
+</body>
+</html>
+
