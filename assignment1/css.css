@@ -120,3 +120,58 @@ button{
 	width: 170px;
 	font-weight: bolder;
 }
+
+#button13{
+	background-color: rgb(244, 9, 197);
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button14{
+	background-color: rgb(232, 244, 9);
+	width: 170px;
+	font-weight: bolder;
+}
+
+#button15{
+	background-color: rgb(13, 9, 244);
+	width: 170px;
+	font-weight: bolder;
+	color: whitesmoke;
+}
+
+#button16{
+	background-color: rgb(244, 9, 13);
+	width: 170px;
+	font-weight: bolder;
+	color: whitesmoke;
+}
+
+#olA{
+	display: table;
+	margin: 0 auto;
+}
+
+#button17{
+	background-color: rgb(80, 9, 244);
+	width: 170px;
+	font-weight: bolder;
+	color: whitesmoke;
+}
+ 
+#button18{
+	display: block;
+	margin:  5px auto;
+	background-color: burlywood;
+}
+
+#imgA{
+	border: 4px solid black;
+}
+
+#button19{
+	display: block;
+	margin: 5px auto;
+	background-color: crimson;
+	color:white;
+}

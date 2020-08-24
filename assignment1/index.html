@@ -42,6 +42,27 @@
 			$("#button12").click(function(){
 				$("#para-1").removeClass("p_element");
 			})
+			$("#button13").click(function(){
+				$("#paraB").before("<p>BEFORE</p> <p>HELLO WORLD</p>");
+			})
+			$("#button14").click(function(){
+				$("#paraC").after("<p>AFTER</p><p>GOODBYE!</p>");
+			})
+			$("#button15").click(function(){
+				$("#h1_A").append("<b><u> THIS IS APPENDED TEXT!</u></b>")
+			})
+			$("#button16").click(function(){
+				$("#olA").append("<li>Ferrari</li><li>Porsche</li>");
+			})
+			$("#button17").click(function(){
+				$("#paraD").html("<h2>Para has been changed into a header!</h2>");
+			})
+			$("#button18").click(function(){
+				$("#imgA").attr("width", "500px");
+			})
+			$("#button19").click(function(){
+				$("#imgA").attr("width",  "300px");
+			})
 		});
 	</script>
 </head>
@@ -101,13 +122,35 @@
 			<button id='button12'>Click to Remove Class from first p-element!</button>
 		</fieldset>	
 		<fieldset class="fieldsets">
-			<legend class="legend-header">Add Class</legend>
-			<h2>This is a header</h2>
-			<p id="para-1">This is a p-element with no class added and will change when button is clicked.</p>
-			<p class="p_element">This is what paragraph above will look like when button is clicked.</p>
-			<button id='button11'>Click to Add Class to first p-element!</button>
-			<button id='button12'>Click to Remove Class from first p-element!</button>
+			<legend class="legend-header">BEFORE / AFTER</legend>
+			<p id="paraB">Something will be added before or after designated para when button is clicked.</p>
+			<p id="paraC">This paragraph will not be affected.</p>
+			<button id='button13'>Click to Add para before the first para </button>
+			<button id='button14'>Click to Add para after the second para </button>
 		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">APPEND</legend>
+			<h1 id="h1_A">This is an H1 header</h1>
+			<p>Cars:</p>
+			<ol id="olA">
+				<li>Subaru</li>
+				<li>Ford</li>
+				<li>Mazda</li>
+			</ol>
+			<button id='button15'>Click to Append something to H1!</button>
+			<button id='button16'>Click to Append to the OL</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">HTML</legend>
+			<p id="paraD">WATCH THIS SPACE. This is a paragraph.</p>
+			<button id='button17'>Click to change the paragraph.</button>
+		</fieldset>	
+		<fieldset class="fieldsets">
+			<legend class="legend-header">ATTRIBUTES</legend>
+			<img id="imgA" src="F16Falcon.jpeg" alt="F16 FALCON JET FIGHTER" width="300" height="150">
+			<button id='button18'>Click to change the ATTRIBUTES of the image.</button>
+			<button id='button19'>Click to revert the ATTRIBUTES of the image.</button>
+		</fieldset>
 	</div>
 </body>
 </html>
