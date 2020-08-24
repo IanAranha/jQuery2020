@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>Ninja - Cats</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="picHolder">
+            <img src="cat0.png" alt-src="ninja0.png" temp="">
+        </div>
+        <div class="picHolder">
+            <img src="cat1.png" alt-src="ninja1.png" temp="">
+        </div>
+        <div class="picHolder">
+            <img src="cat2.png" alt-src="ninja2.png" temp="">
+        </div>
+        <div class="picHolder">
+            <img src="cat3.png" alt-src="ninja3.png" temp="">
+        </div>
+        <div class="picHolder">
+            <img src="cat4.png" alt-src="ninja4.png" temp="">
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("img").click(function(){
+                $(this).attr("temp", $(this).attr("src"));
+                $(this).attr("src", $(this).attr("alt-src"));
+                $(this).attr("alt-src", $(this).attr("temp"));
+            })
+        });
+    </script>
+</body>
+</html>

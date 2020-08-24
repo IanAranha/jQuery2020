@@ -1,0 +1,22 @@
+#wrapper{
+    width: 430px;
+    height: 600px;
+    background-color:black;
+    border: 5px solid darkblue;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.picHolder{
+    display: block;
+    border: 2px solid green;
+    height: 110px;
+    margin-bottom: 1.5%;
+}
+
+img{
+    width:427px;
+    height: 110px;
+}
