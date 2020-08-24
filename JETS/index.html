@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide()
+            })
+
+            $("button").click(function(){
+                $("img").show()
+            })
+        });
+    </script>
+    <title>JETS</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>US AIR FORCE JETS</h1>
+        <img src="F15_Eagle.jpeg" alt="F15 Eagle">
+        <img src="F15_Strike_Eagle.jpeg" alt="F15 Strike Eagle">
+        <img src="F16_Fighting_Falcon.jpeg" alt="F16 Fighting Falcon">
+        <img src="F22_Raptor.jpeg" alt="F22 Raptor">
+        <img src="F35A_Lightning_II.jpeg" alt="F35A Lightning">
+        <br>
+        <button>Click to show all pictures</button>
+    </div>
+</body>
+</html>
