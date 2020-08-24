@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Disappearing Ninja</title>
+    <script>
+        $(document).ready(function(){
+            $("img").click(function(){
+                $(this).hide()
+            })
+            $("button").click(function(){
+                $("img").show()
+            })
+        });
+    </script>
+</head>
+<body>
+    <h2>Disappearing Ninja Assignment</h2>
+    <div id="wrapper"> 
+        <img src="Ninja1.jpeg" alt="Ninja1">
+        <img src="warrior-ninja.jpg" alt="warrior">
+        <img src="angry-ninja-warrior.jpg" alt="angry ninja">
+        <img src="crouch-ninja.jpg" alt="Crouching Ninja">
+        <img src="diver-nnja.jpg" alt="Diver Ninja">
+        <img src="mediation.jpg" alt="Mediating Ninja">
+        <img src="sword-ninja.jpg" alt="Sword Ninja">
+        <img src="assassin.png" alt="Assassin Ninja">
+        <div>
+            <button>CLICK TO RESET</button>
+        </div>
+    </div>
+</body>
+</html>
