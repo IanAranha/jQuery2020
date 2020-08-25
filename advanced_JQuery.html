@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<title>jQuery Advanced</title>
+</head>
+<body>
+    <script>
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('div').append('<h3>I am a new content</h3>');
+        //     });
+   
+        //     $(document).on('mouseover', 'h3', function(){
+        //         $(this).css('color', 'red');
+        //     });
+        // });
+
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('div').append('<h3>I am a new content</h3>');
+            });
+
+
+            $('div.a').on('mouseover', 'h3', function(){ 
+                $(this).css('color', 'blue');
+            });
+            
+            $('div.a h2').click( function(){ 
+                alert('You clicked an H2!'); 
+            });
+
+            $('#myDiv').children().css('background-color', 'lightgreen');
+            $('#myDiv').children('h3').css('background-color', 'skyblue');
+
+            $('h3, p').click(function(){
+                $(this).parent().append('<h2>HOWDY CODING DOJO!</h2>');
+            })
+
+
+        });
+</script>
+<body>
+    <button>Click me</button>
+    <div class="a">
+        <h2>I am old content</h2>
+    </div>
+    <div class="b">
+        <h3>I am old content</h3>
+    </div>
+    <p>This is a paragraph but it is not a child para.</p>
+    <h1>Ian</h1>
+    <h2>Andy</h2>
+    <div id='myDiv'>
+        <p>Here is a paragraph.  It is a beautiful paragraph.</p>
+        <h3>Michael Choi</h3>
+        <h3>John Supsupin</h3>
+        <h3>Trey Villafane</h3>
+    </div>
+    
+</body>
+</body>
+</html>
