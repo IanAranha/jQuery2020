@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>Contact Card</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id= leftBox class="box">
+            <form>
+                <label for="firstName">First Name:</label>
+                <input type="text" name='firstName' id="firstName" placeholder="Enter first name"><br>
+    
+                <label for="lastName">Last Name:</label>
+                <input type="text" name='lastName' id="lastName" placeholder="Enter last name"><br>
+    
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" cols="30" rows="6"></textarea><br>
+    
+                <button id="submit">Click to Add</button>
+            </form>
+        </div>
+        <div id="rightBox" class="box">
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                //extract information from form.
+                var name = $('input[name="firstName"]').val()+" "+$('input[name="lastName"]').val();
+
+                var description = $('textarea[name="description"]').val()
+             
+                //Add information to the card and post card to right box
+                $("#rightBox").append('<div class="contactCard"><h2>'+name+'</h2><p>Click for decription.</p><p id="back">'+description+'</p></div>');
+
+            $(document).on('click', '.contactCard', function(){
+				//Toggle the #cards' childrens' display property
+				$(this).children().toggle();
+			});
+            //Erase information from form.
+            $('input[name="firstName"]').val("");
+            $('input[name="lastName"]').val("");
+            $('textarea[name="description"]').val("");
+            return false;
+            })
+		});
+    </script>
+</body>
+</html>

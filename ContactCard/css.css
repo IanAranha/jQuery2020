@@ -1,0 +1,48 @@
+#wrapper{
+    width: 90%;
+    height: 600px;
+    padding:20px;
+    background-color: skyblue;
+    border: 5px solid black;
+}
+
+.box{
+    border: 2px solid blue;
+    width: 45%;
+    display: inline-block;
+    margin: 10px;
+    font-size: 22px;
+    line-height: 4em;
+}
+
+#leftBox{
+    padding: 20px;
+    vertical-align: top;
+}
+
+#rightBox{
+    height: 370px;
+    text-align: center;
+    padding:1%;
+    overflow-y: scroll;
+}
+
+.contactCard{
+    display: inline-block;
+    border: 2px solid black;
+    width: 70%;
+    height: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9em;
+    margin-bottom: 5%;
+    overflow-x:scroll;
+    word-wrap: normal;
+}
+
+#description{
+    vertical-align: middle;
+}
+
+#back{
+    display: none;
+}
